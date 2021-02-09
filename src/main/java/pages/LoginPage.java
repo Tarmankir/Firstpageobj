@@ -10,6 +10,7 @@ public class LoginPage {
 
     //todo rewrite constructors to methods
     //todo rewrite selectors
+    //todo add gitignore and delete useless files from repository
     private WebDriver driver;
 
     @FindBy(css = "input[aria-label='E-mail или мобильный телефон']")
