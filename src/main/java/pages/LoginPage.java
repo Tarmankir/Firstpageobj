@@ -4,7 +4,7 @@ import enums.Credentials;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import sun.jvm.hotspot.utilities.Assert;
+import org.testng.Assert;
 
 public class LoginPage {
 
@@ -49,6 +49,6 @@ public class LoginPage {
     }
 
     public void checkUsername(String test) {
-        Assert.that(Boolean.parseBoolean(username.getText()), "test");
+        Assert.assertEquals(username.getText(), "username");
     }
 }
